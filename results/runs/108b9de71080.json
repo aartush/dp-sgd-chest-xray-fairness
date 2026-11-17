@@ -1,0 +1,160 @@
+{
+  "run_id": "108b9de71080",
+  "config": {
+    "dataset": "pneumoniamnist",
+    "arch": "resnet18",
+    "method": "pretrained",
+    "eps": null,
+    "epochs": 12,
+    "batch_size": 32,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "max_grad_norm": 1.0,
+    "delta": 1e-05,
+    "multilabel": false,
+    "seed": 2,
+    "imbalance_ratio": null,
+    "max_train": null,
+    "device": "cuda",
+    "max_steps": null,
+    "grad_sample_mode": "ghost"
+  },
+  "train": {
+    "achieved_eps": null,
+    "noise_multiplier": null,
+    "max_grad_norm": 1.0,
+    "steps_run": 1776,
+    "n_params": 11171266,
+    "wall_seconds": 46.07,
+    "history": [
+      {
+        "epoch": 1,
+        "step": 148,
+        "train_loss": 0.6291984581501684,
+        "val_score": 0.5789107873940779,
+        "val_minority_recall": 0.16296296296296298,
+        "epsilon": null
+      },
+      {
+        "epoch": 2,
+        "step": 296,
+        "train_loss": 0.24089598945304816,
+        "val_score": 0.7950109492525945,
+        "val_minority_recall": 0.5925925925925926,
+        "epsilon": null
+      },
+      {
+        "epoch": 3,
+        "step": 444,
+        "train_loss": 0.171920325065834,
+        "val_score": 0.8542702085118538,
+        "val_minority_recall": 0.7111111111111111,
+        "epsilon": null
+      },
+      {
+        "epoch": 4,
+        "step": 592,
+        "train_loss": 0.1231959642406819,
+        "val_score": 0.9488241454822433,
+        "val_minority_recall": 0.9259259259259259,
+        "epsilon": null
+      },
+      {
+        "epoch": 5,
+        "step": 740,
+        "train_loss": 0.10555148306053477,
+        "val_score": 0.9610682662096544,
+        "val_minority_recall": 0.9555555555555556,
+        "epsilon": null
+      },
+      {
+        "epoch": 6,
+        "step": 888,
+        "train_loss": 0.09532022440905731,
+        "val_score": 0.9612206036370561,
+        "val_minority_recall": 0.9481481481481482,
+        "epsilon": null
+      },
+      {
+        "epoch": 7,
+        "step": 1036,
+        "train_loss": 0.07384545815524629,
+        "val_score": 0.9442921070170427,
+        "val_minority_recall": 0.8962962962962963,
+        "epsilon": null
+      },
+      {
+        "epoch": 8,
+        "step": 1184,
+        "train_loss": 0.0942770496735582,
+        "val_score": 0.9487384556793297,
+        "val_minority_recall": 0.9925925925925926,
+        "epsilon": null
+      },
+      {
+        "epoch": 9,
+        "step": 1332,
+        "train_loss": 0.0739975172904468,
+        "val_score": 0.973160049509664,
+        "val_minority_recall": 0.9925925925925926,
+        "epsilon": null
+      },
+      {
+        "epoch": 10,
+        "step": 1480,
+        "train_loss": 0.07242624551499344,
+        "val_score": 0.9603922688755593,
+        "val_minority_recall": 0.9259259259259259,
+        "epsilon": null
+      },
+      {
+        "epoch": 11,
+        "step": 1628,
+        "train_loss": 0.07120430629091937,
+        "val_score": 0.9641626202037513,
+        "val_minority_recall": 0.9925925925925926,
+        "epsilon": null
+      },
+      {
+        "epoch": 12,
+        "step": 1776,
+        "train_loss": 0.06066504974921527,
+        "val_score": 0.9724840521755689,
+        "val_minority_recall": 0.9629629629629629,
+        "epsilon": null
+      }
+    ]
+  },
+  "metrics": {
+    "recall_class0": 0.7991452991452992,
+    "recall_class1": 0.982051282051282,
+    "minority_recall": 0.7991452991452992,
+    "majority_recall": 0.982051282051282,
+    "macro_recall": 0.8905982905982905,
+    "gap_majority_minus_minority": 0.1829059829059828,
+    "accuracy": 0.9134615384615384,
+    "precision_class0": 0.9639175257731959,
+    "precision_class1": 0.8906976744186047,
+    "auc_minority": 0.9645134779750166,
+    "auc_positive_class": 0.9645134779750165,
+    "mia_auc_pooled": 0.5540872192449295,
+    "mia_auc_class_conditional": 0.6105356718313479,
+    "mia_advantage": 0.10817443848985908,
+    "mia_tpr_at_1pct_fpr": 0.0,
+    "mia_tpr_at_10pct_fpr": 0.0,
+    "mia_mean_member_loss": 0.06326915323734283,
+    "mia_mean_nonmember_loss": 0.5664581656455994,
+    "mia_auc_class0": 0.7555513313338684,
+    "mia_auc_class1": 0.46552001232882745
+  },
+  "data": {
+    "train_n": 4708,
+    "val_n": 524,
+    "test_n": 624,
+    "train_counts": {
+      "0": 1214,
+      "1": 3494
+    }
+  },
+  "elapsed_seconds": 46.61
+}

@@ -1,0 +1,7 @@
+,,macro_auc,macro_auc,macro_recall,macro_recall,min_label_recall,min_label_recall,mia_auc_class_conditional,mia_auc_class_conditional
+,,mean,std,mean,std,mean,std,mean,std
+method,eps,,,,,,,,
+baseline,3.0,0.5446979258872604,,0.0,,0.0,,0.491307545972778,
+baseline,,0.6548499389810157,,0.0,,0.0,,0.5121427782020759,
+classweight,3.0,0.5401869753189362,,0.0,,0.0,,0.49182794406577973,
+classweight,,0.6300700521034731,,0.0,,0.0,,0.5077767292282728,

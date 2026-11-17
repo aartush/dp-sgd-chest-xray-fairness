@@ -1,0 +1,26 @@
+# Python 3.12. Exact versions the reported experiments ran on.
+#
+# torch/torchvision: install these FIRST from the CUDA index, because the PyPI
+# wheels are CPU-only on Windows and `torch==2.6.0+cu124` cannot be resolved
+# from PyPI (the +cu124 build tag only exists on the PyTorch index):
+#
+#   py -3.12 -m venv .venv
+#   .venv/Scripts/python.exe -m pip install torch==2.6.0+cu124 torchvision==0.21.0+cu124 \
+#       --index-url https://download.pytorch.org/whl/cu124
+#   .venv/Scripts/python.exe -m pip install -r requirements.txt
+#
+matplotlib==3.11.2
+medmnist==3.0.2
+numpy==2.5.4
+opacus==1.5.4
+pandas==3.1.1
+pytest==9.2.0
+python-docx==1.2.0
+python-pptx==1.0.2
+pywin32==312 ; sys_platform == "win32"
+scikit-learn==1.9.1
+scipy==1.18.1
+
+# Documents are exported to PDF with Word/PowerPoint via pywin32; pymupdf is
+# used to count the resulting pages when checking the one-page constraint.
+pymupdf==2.1

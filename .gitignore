@@ -1,0 +1,43 @@
+# ---------------------------------------------------------------- environment
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- datasets
+# MedMNIST downloads ~83 MB of .npz into data/ on first use. Never commit
+# clinical images: the loaders fetch them again from the official source.
+# Ignore the contents, not the folder, so data/.gitkeep can be tracked.
+data/*
+!data/.gitkeep
+
+# ---------------------------------------------------------------- model weights
+# We do not save checkpoints — every model is reproducible from its run artifact.
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# ---------------------------------------------------------------- regenerable output
+docs/render/
+docs/guidebook/_shots/
+results/logs/
+*.log
+
+# ---------------------------------------------------------------- OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.vscode/
+.idea/
+
+# ---------------------------------------------------------------- secrets
+.env
+.env.*
+!.env.example
